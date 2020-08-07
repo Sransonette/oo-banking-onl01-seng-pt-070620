@@ -15,6 +15,7 @@ class BankAccount
   end
   
   def deposit(amount)
+<<<<<<< HEAD
     @balance += amount
   end 
   
@@ -33,5 +34,14 @@ class BankAccount
   def close_account 
     @status = "closed"
   end
+=======
+    amount = BankAccount.new(amount)
+    deposit(amount)
+    
+    
+  end 
+  
+  
+>>>>>>> 0ed4619cd62e75def762ba12ecbeb6dafe334855
 
 end
